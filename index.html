@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+ 
+    <title>右边控制高度</title>
+    <style>
+    	*{
+          /* 初始化 */
+          margin: 0;
+          padding: 0;
+      }
+      .container  {
+        display: inline-block;
+        background: #efefef;
+        height: 32px;
+        width:200px;
+        position: absolute;
+      }
+      .split::after{
+        content: " ";
+        border-left: 1px solid #000000;
+        display: inline-block;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        margin-top: -8px;
+      }
+      body{
+        text-align: center;
+        padding: 20px
+      }
+    </style>
+</head>
+ 
+<body>
+  <div>
+    <div>有边框测试，可以控制边框高度,css通过after</div>
+    <div>要点1：主容器container 必须是相对定位</div>
+    <div>要点2：用css的after属性，插入空节点</div>
+    <div>要点3：在通过设置高度，设置相对定位设置偏移</div>
+    <div class="container split">
+       
+    </div>
+  </div>
+   
+</body>
+ 
+</html>
