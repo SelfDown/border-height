@@ -23,3 +23,5 @@
 ```
 # 示例
 ![image](https://github.com/SelfDown/border-height/assets/22128775/1baa58d1-2c85-4922-883b-ddb28ea400ac)
+![image](https://github.com/user-attachments/assets/c9a011e1-d1e7-4eb8-8e21-049465f95fca)
+
