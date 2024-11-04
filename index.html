@@ -33,18 +33,67 @@
         text-align: center;
         padding: 20px
       }
+      .flex-container{
+      	display: flex;
+      	flex-wrap: wrap;
+		justify-content: space-between
+      }
+      .item{
+      	width: 200px;
+      	height: 200px;	
+      	margin-top: 20px;
+      	border: 1px solid rgb(226,182,182);
+      	background: rgb(236,208,208);
+      	color: white;
+      	font-size: 70px;
+      	line-height: 3;
+
+      }
+      .dumy{
+      	width: 200px;
+      	height: 0;
+      	border-width: 0;
+      }
     </style>
 </head>
  
 <body>
   <div>
-    <div>有边框测试，可以控制边框高度,css通过after</div>
-    <div>要点1：主容器container 必须是相对定位</div>
-    <div>要点2：用css的after属性，插入空节点</div>
-    <div>要点3：在通过设置高度，设置相对定位设置偏移</div>
-    <div class="container split">
-       
-    </div>
+  	<div>
+	  	<h1>边框样例</h1>
+	    <div>有边框测试，可以控制边框高度,css通过after</div>
+	    <div>要点1：主容器container 必须是相对定位</div>
+	    <div>要点2：用css的after属性，插入空节点</div>
+	    <div>要点3：在通过设置高度，设置相对定位设置偏移</div>
+	    <div class="container split">
+	       
+	    </div>
+	</div>
+    <div style="margin-top:100px">
+	    <h1>flex ,最后一行靠左对其</h1>
+	    
+	    <div class="flex-container">
+	    	<div class="item">1</div>
+	    	<div class="item">2</div>
+	    	<div class="item">3</div>
+	    	<div class="item">4</div>
+	    	<div class="item">5</div>
+	    	<div class="item">6</div>
+	    	<div class="item">7</div>
+	    	<div class="item">8</div>
+	    	<div class="item">9</div>
+	    	<div class="item">10</div>
+
+	    	<div class="dumy item"></div>
+	    	<div class="dumy item"></div>
+	    	<div class="dumy item"></div>
+	    	<div class="dumy item"></div>
+	    	<div class="dumy item"></div>
+	    	<div class="dumy item"></div>
+	    	<div class="dumy item"></div>
+	    </div>
+	</div>
+
   </div>
    
 </body>
